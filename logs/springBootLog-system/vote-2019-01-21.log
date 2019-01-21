@@ -796,3 +796,1051 @@ Using generated security password: 02d0af02-0909-404d-ab4f-d3759e0ba56a
 				HikariPool-1 - Starting...
 2019-01-21 13:57:53.245 [http-nio-8000-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -
 				HikariPool-1 - Start completed.
+2019-01-21 14:21:58.337 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b272a47: startup date [Mon Jan 21 14:21:58 CST 2019]; root of context hierarchy
+2019-01-21 14:21:58.508 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$727b63fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:21:59.823 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				No active profile set, falling back to default profiles: default
+2019-01-21 14:21:59.840 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c56e01a: startup date [Mon Jan 21 14:21:59 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b272a47
+2019-01-21 14:22:01.082 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-21 14:22:01.282 [restartedMain] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+				Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-01-21 14:22:01.436 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope -
+				BeanFactory id=b7ee47f4-afde-3615-8c0d-18d611d1109c
+2019-01-21 14:22:01.543 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$ef0f293b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.560 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCacheConfig' of type [com.zhiyesoft.vote.CompositeCacheConfig$$EnhancerBySpringCGLIB$$b069eb9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.568 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56616101] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.601 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'simpleCacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.615 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.616 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.625 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$6b7b1f4b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.698 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.746 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.761 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisCacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.768 [restartedMain] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Initializing EhCache CacheManager
+2019-01-21 14:22:01.925 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehCacheManagerFactoryBean' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.932 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehcacheCacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.935 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheManager' of type [org.springframework.cache.support.CompositeCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.936 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCachingConfigurer' of type [com.zhiyesoft.vote.CompositeCachingConfigurer$$EnhancerBySpringCGLIB$$6cf18944] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.943 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheResolver' of type [org.springframework.cache.interceptor.SimpleCacheResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.970 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.975 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@25e3e741' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.984 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$13e3cbed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:01.992 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:02.013 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$727b63fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 14:22:02.440 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8000 (http)
+2019-01-21 14:22:02.449 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8000"]
+2019-01-21 14:22:02.457 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2019-01-21 14:22:02.457 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-21 14:22:02.461 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_65\bin;E:\apache-maven-3.5.4\bin;D:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\VisualSVN Server\bin;D:\AndroidSdk\Sdk\tools;D:\AndroidSdk\Sdk\platform-tools;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;C:\Users\admin\AppData\Roaming\npm;E:\Program Files\Docker Toolbox;D:\Program Files\Microsoft VS Code\bin;E:\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2019-01-21 14:22:02.600 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2019-01-21 14:22:02.601 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2760 ms
+2019-01-21 14:22:02.992 [localhost-startStop-1] INFO  org.springframework.aop.framework.CglibAopProxy -
+				Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-01-21 14:22:03.457 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-21 14:22:03.458 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-21 14:22:03.459 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+				Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-01-21 14:22:03.459 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-21 14:22:03.459 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2019-01-21 14:22:04.406 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/delete/{id}],methods=[DELETE]}" onto public int com.zhiyesoft.vote.modules.topic.web.UserController.delete(java.lang.String)
+2019-01-21 14:22:04.408 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/login],methods=[POST]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.login(java.lang.String,java.lang.String)
+2019-01-21 14:22:04.408 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/selectAll],methods=[GET]}" onto public java.util.List<com.zhiyesoft.vote.modules.topic.domain.User> com.zhiyesoft.vote.modules.topic.web.UserController.selectAll()
+2019-01-21 14:22:04.408 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/createImg],methods=[GET]}" onto public void com.zhiyesoft.vote.modules.topic.web.UserController.captcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws javax.servlet.ServletException,java.io.IOException
+2019-01-21 14:22:04.409 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.getById(java.lang.Integer)
+2019-01-21 14:22:04.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.delete(java.lang.String)
+2019-01-21 14:22:04.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectAll()
+2019-01-21 14:22:04.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 14:22:04.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.getById(java.lang.String)
+2019-01-21 14:22:04.416 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-21 14:22:04.417 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-21 14:22:04.417 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-21 14:22:04.420 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-21 14:22:04.420 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 14:22:04.533 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -
+				Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-21 14:22:04.550 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 14:22:04.551 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 14:22:04.551 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 14:22:04.877 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 14:22:04.877 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 14:22:04.940 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c56e01a: startup date [Mon Jan 21 14:21:59 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b272a47
+2019-01-21 14:22:05.043 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-21 14:22:05.839 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -
+				
+
+Using generated security password: 02c79efd-5028-4ed9-9376-b90c3003463b
+
+2019-01-21 14:22:05.919 [restartedMain] INFO  com.zhiyesoft.vote.ResourcesServerConfiguration -
+				Configuring ResourceServerSecurityConfigurer
+2019-01-21 14:22:06.026 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5596b251, org.springframework.security.web.context.SecurityContextPersistenceFilter@c833969, org.springframework.security.web.header.HeaderWriterFilter@46483330, org.springframework.security.web.authentication.logout.LogoutFilter@10f1da4f, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@6ca5bf2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfbecd4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@323f8b83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43f4b7d6, org.springframework.security.web.session.SessionManagementFilter@707a6056, org.springframework.security.web.access.ExceptionTranslationFilter@157c4ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@646060c8]
+2019-01-21 14:22:06.038 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25ef16cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@27d09ecb, org.springframework.security.web.header.HeaderWriterFilter@59da918, org.springframework.security.web.authentication.logout.LogoutFilter@f65289c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5298bb16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aa50d34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22607d7d, org.springframework.security.web.session.SessionManagementFilter@71889fbb, org.springframework.security.web.access.ExceptionTranslationFilter@3318d4ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fee1d6a]
+2019-01-21 14:22:06.172 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2019-01-21 14:22:07.425 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils -
+				Cannot determine local hostname
+2019-01-21 14:22:07.581 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2019-01-21 14:22:07.583 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-21 14:22:07.591 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-21 14:22:07.593 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-21 14:22:07.594 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-21 14:22:07.598 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-21 14:22:07.605 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-21 14:22:07.615 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1c56e01a,type=ConfigurationPropertiesRebinder]
+2019-01-21 14:22:07.619 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-21 14:22:07.624 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-01-21 14:22:07.625 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-01-21 14:22:07.637 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-01-21 14:22:07.667 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-01-21 14:22:07.796 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_1
+2019-01-21 14:22:07.798 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_1
+2019-01-21 14:22:07.800 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_1
+2019-01-21 14:22:07.823 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8000"]
+2019-01-21 14:22:07.830 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2019-01-21 14:22:07.846 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8000 (http) with context path ''
+2019-01-21 14:22:07.849 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				Started MyVoteApplication in 11.129 seconds (JVM running for 11.936)
+2019-01-21 14:22:08.209 [http-nio-8000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-21 14:22:08.210 [http-nio-8000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-21 14:22:08.239 [http-nio-8000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-01-21 14:22:08.277 [http-nio-8000-exec-1] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:09.728 [http-nio-8000-exec-2] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:10.448 [http-nio-8000-exec-3] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:10.982 [http-nio-8000-exec-4] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:11.175 [http-nio-8000-exec-5] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:11.344 [http-nio-8000-exec-6] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:11.510 [http-nio-8000-exec-7] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:11.663 [http-nio-8000-exec-8] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:11.822 [http-nio-8000-exec-9] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:11.990 [http-nio-8000-exec-10] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/swagger-ui.html/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:12.589 [http-nio-8000-exec-1] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:13.574 [http-nio-8000-exec-2] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:14.063 [http-nio-8000-exec-3] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:14.232 [http-nio-8000-exec-4] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:14.422 [http-nio-8000-exec-5] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:14.566 [http-nio-8000-exec-6] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:14.741 [http-nio-8000-exec-7] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:14.878 [http-nio-8000-exec-8] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:15.030 [http-nio-8000-exec-9] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:32.094 [http-nio-8000-exec-10] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:32.598 [http-nio-8000-exec-1] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:32.781 [http-nio-8000-exec-2] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:32.933 [http-nio-8000-exec-3] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:33.109 [http-nio-8000-exec-4] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:33.262 [http-nio-8000-exec-5] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:33.422 [http-nio-8000-exec-6] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:33.566 [http-nio-8000-exec-7] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:22:33.732 [http-nio-8000-exec-8] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/null/swagger-resources/configuration/ui] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 14:23:49.370 [http-nio-8000-exec-9] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2019-01-21 14:23:49.515 [http-nio-8000-exec-9] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2019-01-21 14:24:31.075 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2019-01-21 14:24:31.076 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c56e01a: startup date [Mon Jan 21 14:21:59 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b272a47
+2019-01-21 14:24:31.079 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2019-01-21 14:24:31.081 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2019-01-21 14:24:31.082 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2019-01-21 14:24:31.085 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Shutting down EhCache CacheManager
+2019-01-21 14:24:31.101 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2019-01-21 14:24:31.105 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2019-01-21 14:24:31.107 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8000"]
+2019-01-21 14:24:31.247 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.catalina.core.StandardService -
+				Stopping service [Tomcat]
+2019-01-21 14:24:31.251 [localhost-startStop-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-01-21 14:24:31.267 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8000"]
+2019-01-21 14:24:31.273 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Destroying ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:06:26.237 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4396cddb: startup date [Mon Jan 21 15:06:26 CST 2019]; root of context hierarchy
+2019-01-21 15:06:26.459 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a2e63a3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:27.791 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				No active profile set, falling back to default profiles: default
+2019-01-21 15:06:27.814 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44e0e58: startup date [Mon Jan 21 15:06:27 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4396cddb
+2019-01-21 15:06:29.256 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-21 15:06:29.482 [restartedMain] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+				Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-01-21 15:06:29.688 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope -
+				BeanFactory id=b7ee47f4-afde-3615-8c0d-18d611d1109c
+2019-01-21 15:06:29.789 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$1f79ff7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.805 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCacheConfig' of type [com.zhiyesoft.vote.CompositeCacheConfig$$EnhancerBySpringCGLIB$$e0d4c1dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.813 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86cc3741] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.854 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'simpleCacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.868 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.870 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.883 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$9be5f58b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:29.966 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.019 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.035 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisCacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.044 [restartedMain] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Initializing EhCache CacheManager
+2019-01-21 15:06:30.206 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehCacheManagerFactoryBean' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.212 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehcacheCacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.216 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheManager' of type [org.springframework.cache.support.CompositeCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.216 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCachingConfigurer' of type [com.zhiyesoft.vote.CompositeCachingConfigurer$$EnhancerBySpringCGLIB$$9d5c5f84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.223 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheResolver' of type [org.springframework.cache.interceptor.SimpleCacheResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.256 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.260 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3e2b94b' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.268 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$444ea22d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.277 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.301 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a2e63a3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:06:30.798 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8000 (http)
+2019-01-21 15:06:30.810 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:06:30.820 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2019-01-21 15:06:30.820 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-21 15:06:30.824 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_65\bin;E:\apache-maven-3.5.4\bin;D:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\VisualSVN Server\bin;D:\AndroidSdk\Sdk\tools;D:\AndroidSdk\Sdk\platform-tools;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;C:\Users\admin\AppData\Roaming\npm;E:\Program Files\Docker Toolbox;D:\Program Files\Microsoft VS Code\bin;E:\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2019-01-21 15:06:30.950 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2019-01-21 15:06:30.951 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 3137 ms
+2019-01-21 15:06:31.392 [localhost-startStop-1] INFO  org.springframework.aop.framework.CglibAopProxy -
+				Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-01-21 15:06:31.982 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-21 15:06:31.983 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-21 15:06:31.985 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+				Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-01-21 15:06:31.985 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-21 15:06:31.985 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2019-01-21 15:06:33.049 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/delete/{id}],methods=[DELETE]}" onto public int com.zhiyesoft.vote.modules.topic.web.UserController.delete(java.lang.String)
+2019-01-21 15:06:33.051 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/createImg],methods=[GET]}" onto public void com.zhiyesoft.vote.modules.topic.web.UserController.captcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws javax.servlet.ServletException,java.io.IOException
+2019-01-21 15:06:33.051 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/selectAll],methods=[GET]}" onto public java.util.List<com.zhiyesoft.vote.modules.topic.domain.User> com.zhiyesoft.vote.modules.topic.web.UserController.selectAll()
+2019-01-21 15:06:33.051 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.getById(java.lang.Integer)
+2019-01-21 15:06:33.051 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/login],methods=[POST]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.login(java.lang.String,java.lang.String)
+2019-01-21 15:06:33.054 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.delete(java.lang.String)
+2019-01-21 15:06:33.054 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectAll()
+2019-01-21 15:06:33.054 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.getById(java.lang.String)
+2019-01-21 15:06:33.054 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 15:06:33.059 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-21 15:06:33.060 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-21 15:06:33.060 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-21 15:06:33.063 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-21 15:06:33.063 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 15:06:33.206 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -
+				Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-21 15:06:33.224 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 15:06:33.226 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 15:06:33.227 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 15:06:33.573 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 15:06:33.573 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 15:06:33.643 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44e0e58: startup date [Mon Jan 21 15:06:27 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4396cddb
+2019-01-21 15:06:33.766 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-21 15:06:34.723 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -
+				
+
+Using generated security password: 737ed31c-8d09-410f-a65b-3f52825deabd
+
+2019-01-21 15:06:34.822 [restartedMain] INFO  com.zhiyesoft.vote.ResourcesServerConfiguration -
+				Configuring ResourceServerSecurityConfigurer
+2019-01-21 15:06:34.952 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26b483f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@34bf10c2, org.springframework.security.web.header.HeaderWriterFilter@1a06fed9, org.springframework.security.web.authentication.logout.LogoutFilter@7abe45e3, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2221055, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eabf503, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@589fa876, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70ccdc1, org.springframework.security.web.session.SessionManagementFilter@522875be, org.springframework.security.web.access.ExceptionTranslationFilter@1601164e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@604e3bd4]
+2019-01-21 15:06:34.968 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2401347b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c28d07f, org.springframework.security.web.header.HeaderWriterFilter@7c156c19, org.springframework.security.web.authentication.logout.LogoutFilter@69902df0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a6ac9a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dc80b59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b7a67e1, org.springframework.security.web.session.SessionManagementFilter@16264b43, org.springframework.security.web.access.ExceptionTranslationFilter@5372bec5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a4209ad]
+2019-01-21 15:06:35.104 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2019-01-21 15:06:36.337 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils -
+				Cannot determine local hostname
+2019-01-21 15:06:36.468 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2019-01-21 15:06:36.470 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-21 15:06:36.482 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-21 15:06:36.484 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-21 15:06:36.486 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-21 15:06:36.491 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-21 15:06:36.499 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-21 15:06:36.511 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=44e0e58,type=ConfigurationPropertiesRebinder]
+2019-01-21 15:06:36.517 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-21 15:06:36.523 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-01-21 15:06:36.523 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-01-21 15:06:36.538 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-01-21 15:06:36.574 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-01-21 15:06:36.717 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_1
+2019-01-21 15:06:36.719 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_1
+2019-01-21 15:06:36.721 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_1
+2019-01-21 15:06:36.747 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:06:36.756 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2019-01-21 15:06:36.774 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8000 (http) with context path ''
+2019-01-21 15:06:36.778 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				Started MyVoteApplication in 12.155 seconds (JVM running for 12.949)
+2019-01-21 15:07:49.194 [http-nio-8000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-21 15:07:49.195 [http-nio-8000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-21 15:07:49.231 [http-nio-8000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2019-01-21 15:07:49.294 [http-nio-8000-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2019-01-21 15:07:49.604 [http-nio-8000-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2019-01-21 15:07:49.609 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 15:07:49.642 [http-nio-8000-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+				Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is tk.mybatis.mapper.MapperException: 当前实体类不包含名为mobil的属性!] with root cause
+tk.mybatis.mapper.MapperException: 当前实体类不包含名为mobil的属性!
+	at tk.mybatis.mapper.entity.Example$GeneratedCriteria.column(Example.java:302)
+	at tk.mybatis.mapper.entity.Example$GeneratedCriteria.andEqualTo(Example.java:405)
+	at tk.mybatis.mapper.entity.Example$Criteria.andEqualTo(Example.java:723)
+	at com.zhiyesoft.vote.modules.topic.service.impl.UserServiceImpl.login(UserServiceImpl.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy125.login(Unknown Source)
+	at com.zhiyesoft.vote.modules.topic.web.UserController.login(UserController.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-21 15:09:13.065 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 15:09:13.140 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1479579527, id=1, name=1, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=1, createTime=Mon Jan 21 15:06:12 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=1, password=1, serialVersionUID=1]
+2019-01-21 15:29:30.340 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 15:29:30.344 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1479579527, id=1, name=1, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=1, createTime=Mon Jan 21 15:06:12 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=1, password=1, serialVersionUID=1]
+2019-01-21 15:48:37.002 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1bb62a6: startup date [Mon Jan 21 15:48:37 CST 2019]; root of context hierarchy
+2019-01-21 15:48:37.188 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$620c48c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:38.507 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				No active profile set, falling back to default profiles: default
+2019-01-21 15:48:38.526 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64255fbb: startup date [Mon Jan 21 15:48:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1bb62a6
+2019-01-21 15:48:39.745 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-21 15:48:39.952 [restartedMain] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+				Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-01-21 15:48:40.123 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope -
+				BeanFactory id=18180aca-5379-393b-9dc1-1175fdfc031c
+2019-01-21 15:48:40.212 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$dea00e00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.228 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCacheConfig' of type [com.zhiyesoft.vote.CompositeCacheConfig$$EnhancerBySpringCGLIB$$9ffad062] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.235 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45f245c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.265 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'simpleCacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.278 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.279 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.288 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$5b0c0410] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.355 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.398 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.410 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisCacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.418 [restartedMain] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Initializing EhCache CacheManager
+2019-01-21 15:48:40.562 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehCacheManagerFactoryBean' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.568 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehcacheCacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.571 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheManager' of type [org.springframework.cache.support.CompositeCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.571 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCachingConfigurer' of type [com.zhiyesoft.vote.CompositeCachingConfigurer$$EnhancerBySpringCGLIB$$5c826e09] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.577 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheResolver' of type [org.springframework.cache.interceptor.SimpleCacheResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.606 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.609 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@23adc430' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.614 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$374b0b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.622 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:40.643 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$620c48c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:48:41.085 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8000 (http)
+2019-01-21 15:48:41.096 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:48:41.105 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2019-01-21 15:48:41.105 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-21 15:48:41.110 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_65\bin;E:\apache-maven-3.5.4\bin;D:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\VisualSVN Server\bin;D:\AndroidSdk\Sdk\tools;D:\AndroidSdk\Sdk\platform-tools;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;C:\Users\admin\AppData\Roaming\npm;E:\Program Files\Docker Toolbox;D:\Program Files\Microsoft VS Code\bin;E:\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2019-01-21 15:48:41.217 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2019-01-21 15:48:41.219 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2693 ms
+2019-01-21 15:48:41.611 [localhost-startStop-1] INFO  org.springframework.aop.framework.CglibAopProxy -
+				Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-01-21 15:48:42.118 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-21 15:48:42.119 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-21 15:48:42.121 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+				Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-01-21 15:48:42.121 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-21 15:48:42.122 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2019-01-21 15:48:43.006 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.delete(java.lang.String)
+2019-01-21 15:48:43.008 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.selectAll()
+2019-01-21 15:48:43.009 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 15:48:43.009 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.getById(java.lang.String)
+2019-01-21 15:48:43.009 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/selectAllByTopicId],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.selectAllByTopicId(java.lang.Integer)
+2019-01-21 15:48:43.012 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/delete/{id}],methods=[DELETE]}" onto public int com.zhiyesoft.vote.modules.topic.web.UserController.delete(java.lang.String)
+2019-01-21 15:48:43.013 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/selectAll],methods=[GET]}" onto public java.util.List<com.zhiyesoft.vote.modules.topic.domain.User> com.zhiyesoft.vote.modules.topic.web.UserController.selectAll()
+2019-01-21 15:48:43.013 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/login],methods=[POST]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.login(java.lang.String,java.lang.String)
+2019-01-21 15:48:43.013 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/createImg],methods=[GET]}" onto public void com.zhiyesoft.vote.modules.topic.web.UserController.captcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws javax.servlet.ServletException,java.io.IOException
+2019-01-21 15:48:43.014 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.getById(java.lang.Integer)
+2019-01-21 15:48:43.015 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.delete(java.lang.String)
+2019-01-21 15:48:43.015 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectAll()
+2019-01-21 15:48:43.016 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 15:48:43.016 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.getById(java.lang.String)
+2019-01-21 15:48:43.019 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-21 15:48:43.020 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-21 15:48:43.021 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-21 15:48:43.023 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-21 15:48:43.023 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 15:48:43.122 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -
+				Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-21 15:48:43.136 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 15:48:43.138 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 15:48:43.139 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 15:48:43.432 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 15:48:43.432 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 15:48:43.492 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64255fbb: startup date [Mon Jan 21 15:48:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1bb62a6
+2019-01-21 15:48:43.591 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-21 15:48:44.448 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -
+				
+
+Using generated security password: 0cad1a0a-5cde-4025-8692-307f32a94ab8
+
+2019-01-21 15:48:44.534 [restartedMain] INFO  com.zhiyesoft.vote.ResourcesServerConfiguration -
+				Configuring ResourceServerSecurityConfigurer
+2019-01-21 15:48:44.655 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bce6357, org.springframework.security.web.context.SecurityContextPersistenceFilter@24e17474, org.springframework.security.web.header.HeaderWriterFilter@2addca15, org.springframework.security.web.authentication.logout.LogoutFilter@79ec6ab, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@32b7cc75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cf64d2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1babb3af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f3f005a, org.springframework.security.web.session.SessionManagementFilter@4845b3e9, org.springframework.security.web.access.ExceptionTranslationFilter@37f99414, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e205b96]
+2019-01-21 15:48:44.667 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41593445, org.springframework.security.web.context.SecurityContextPersistenceFilter@56e35ed1, org.springframework.security.web.header.HeaderWriterFilter@1ced5c, org.springframework.security.web.authentication.logout.LogoutFilter@63c4b974, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43acc9bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@243dba9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dc7d0b, org.springframework.security.web.session.SessionManagementFilter@66342141, org.springframework.security.web.access.ExceptionTranslationFilter@1e216f75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b037d6]
+2019-01-21 15:48:44.778 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2019-01-21 15:48:45.994 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils -
+				Cannot determine local hostname
+2019-01-21 15:48:46.141 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2019-01-21 15:48:46.143 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-21 15:48:46.151 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-21 15:48:46.152 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-21 15:48:46.154 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-21 15:48:46.157 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-21 15:48:46.165 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-21 15:48:46.176 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=64255fbb,type=ConfigurationPropertiesRebinder]
+2019-01-21 15:48:46.184 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-21 15:48:46.188 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-01-21 15:48:46.188 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-01-21 15:48:46.201 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-01-21 15:48:46.233 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-01-21 15:48:46.351 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_1
+2019-01-21 15:48:46.365 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_1
+2019-01-21 15:48:46.371 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_1
+2019-01-21 15:48:46.375 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_2
+2019-01-21 15:48:46.378 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_2
+2019-01-21 15:48:46.380 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_2
+2019-01-21 15:48:46.382 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectByPageUsingGET_1
+2019-01-21 15:48:46.402 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:48:46.411 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2019-01-21 15:48:46.424 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8000 (http) with context path ''
+2019-01-21 15:48:46.427 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				Started MyVoteApplication in 11.009 seconds (JVM running for 11.74)
+2019-01-21 15:50:43.883 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2019-01-21 15:50:43.883 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64255fbb: startup date [Mon Jan 21 15:48:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1bb62a6
+2019-01-21 15:50:43.885 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2019-01-21 15:50:43.887 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2019-01-21 15:50:43.889 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2019-01-21 15:50:43.892 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Shutting down EhCache CacheManager
+2019-01-21 15:50:43.908 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:50:44.057 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.catalina.core.StandardService -
+				Stopping service [Tomcat]
+2019-01-21 15:50:44.073 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:50:44.080 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Destroying ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:50:51.208 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1d31b38e: startup date [Mon Jan 21 15:50:51 CST 2019]; root of context hierarchy
+2019-01-21 15:50:51.379 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e957ab8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:52.711 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				No active profile set, falling back to default profiles: default
+2019-01-21 15:50:52.732 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c26c93f: startup date [Mon Jan 21 15:50:52 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1d31b38e
+2019-01-21 15:50:53.920 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-21 15:50:54.104 [restartedMain] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+				Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-01-21 15:50:54.279 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope -
+				BeanFactory id=9548a6c4-6cea-372a-9a66-85aaf224d7d3
+2019-01-21 15:50:54.367 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$65eb70c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.382 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCacheConfig' of type [com.zhiyesoft.vote.CompositeCacheConfig$$EnhancerBySpringCGLIB$$2746332a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.390 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd3da88e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.421 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'simpleCacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.432 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.433 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.442 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$e25766d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.510 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.558 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.571 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'redisCacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.578 [restartedMain] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Initializing EhCache CacheManager
+2019-01-21 15:50:54.738 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehCacheManagerFactoryBean' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.746 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'ehcacheCacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.751 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheManager' of type [org.springframework.cache.support.CompositeCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.752 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'compositeCachingConfigurer' of type [com.zhiyesoft.vote.CompositeCachingConfigurer$$EnhancerBySpringCGLIB$$e3cdd0d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.759 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'cacheResolver' of type [org.springframework.cache.interceptor.SimpleCacheResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.789 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.792 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1b71dec9' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.801 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8ac0137a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.811 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:54.836 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e957ab8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 15:50:55.297 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8000 (http)
+2019-01-21 15:50:55.306 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:50:55.313 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2019-01-21 15:50:55.313 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-21 15:50:55.317 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_65\bin;E:\apache-maven-3.5.4\bin;D:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\VisualSVN Server\bin;D:\AndroidSdk\Sdk\tools;D:\AndroidSdk\Sdk\platform-tools;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;C:\Users\admin\AppData\Roaming\npm;E:\Program Files\Docker Toolbox;D:\Program Files\Microsoft VS Code\bin;E:\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2019-01-21 15:50:55.411 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2019-01-21 15:50:55.411 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2679 ms
+2019-01-21 15:50:55.779 [localhost-startStop-1] INFO  org.springframework.aop.framework.CglibAopProxy -
+				Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-01-21 15:50:56.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-21 15:50:56.304 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-21 15:50:56.306 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+				Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-01-21 15:50:56.306 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-21 15:50:56.306 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2019-01-21 15:50:57.154 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.delete(java.lang.String)
+2019-01-21 15:50:57.155 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.selectAll()
+2019-01-21 15:50:57.156 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 15:50:57.156 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.getById(java.lang.String)
+2019-01-21 15:50:57.156 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/quest/selectAllByTopicId],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.QuestionController.selectAllByTopicId(java.lang.Integer)
+2019-01-21 15:50:57.159 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/topic/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.TopicController.delete(java.lang.String)
+2019-01-21 15:50:57.159 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/topic/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.TopicController.selectAll()
+2019-01-21 15:50:57.159 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/topic/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.TopicController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 15:50:57.160 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/topic/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.TopicController.getById(java.lang.String)
+2019-01-21 15:50:57.162 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/delete/{id}],methods=[DELETE]}" onto public int com.zhiyesoft.vote.modules.topic.web.UserController.delete(java.lang.String)
+2019-01-21 15:50:57.163 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/selectAll],methods=[GET]}" onto public java.util.List<com.zhiyesoft.vote.modules.topic.domain.User> com.zhiyesoft.vote.modules.topic.web.UserController.selectAll()
+2019-01-21 15:50:57.163 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/login],methods=[POST]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.login(java.lang.String,java.lang.String)
+2019-01-21 15:50:57.163 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/createImg],methods=[GET]}" onto public void com.zhiyesoft.vote.modules.topic.web.UserController.captcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws javax.servlet.ServletException,java.io.IOException
+2019-01-21 15:50:57.163 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/user/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.modules.topic.domain.User com.zhiyesoft.vote.modules.topic.web.UserController.getById(java.lang.Integer)
+2019-01-21 15:50:57.164 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/delete/{id}],methods=[DELETE]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.delete(java.lang.String)
+2019-01-21 15:50:57.165 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectAll],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectAll()
+2019-01-21 15:50:57.165 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/selectByPage],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.selectByPage(java.lang.Integer,java.lang.Integer)
+2019-01-21 15:50:57.165 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/vote/vote/view/{id}],methods=[GET]}" onto public com.zhiyesoft.vote.basic.core.vo.Response com.zhiyesoft.vote.modules.topic.web.VoteController.getById(java.lang.String)
+2019-01-21 15:50:57.168 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-21 15:50:57.169 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-21 15:50:57.169 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-21 15:50:57.171 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-21 15:50:57.172 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 15:50:57.277 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -
+				Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-21 15:50:57.292 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 15:50:57.295 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-21 15:50:57.295 [restartedMain] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -
+				Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-21 15:50:57.606 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 15:50:57.606 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-21 15:50:57.664 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c26c93f: startup date [Mon Jan 21 15:50:52 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1d31b38e
+2019-01-21 15:50:57.762 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-21 15:50:58.557 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -
+				
+
+Using generated security password: 0979148e-cc98-4b33-991d-04ebadf8d8a2
+
+2019-01-21 15:50:58.639 [restartedMain] INFO  com.zhiyesoft.vote.ResourcesServerConfiguration -
+				Configuring ResourceServerSecurityConfigurer
+2019-01-21 15:50:58.744 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46e9f5b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e94fc4b, org.springframework.security.web.header.HeaderWriterFilter@5fad2c3c, org.springframework.security.web.authentication.logout.LogoutFilter@2aef6f83, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@6349aae9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71232d0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c824fa0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c3b796d, org.springframework.security.web.session.SessionManagementFilter@5ba97dc6, org.springframework.security.web.access.ExceptionTranslationFilter@10bf336d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@350e3539]
+2019-01-21 15:50:58.755 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain -
+				Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b49f37c, org.springframework.security.web.context.SecurityContextPersistenceFilter@211351d1, org.springframework.security.web.header.HeaderWriterFilter@5eb37698, org.springframework.security.web.authentication.logout.LogoutFilter@692e54f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c85b5b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79c7130b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@412350b3, org.springframework.security.web.session.SessionManagementFilter@572b162, org.springframework.security.web.access.ExceptionTranslationFilter@291683ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@193d6363]
+2019-01-21 15:50:58.851 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2019-01-21 15:51:00.061 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils -
+				Cannot determine local hostname
+2019-01-21 15:51:00.153 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2019-01-21 15:51:00.154 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-21 15:51:00.164 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-21 15:51:00.164 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-21 15:51:00.167 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-21 15:51:00.169 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-21 15:51:00.177 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-21 15:51:00.188 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2c26c93f,type=ConfigurationPropertiesRebinder]
+2019-01-21 15:51:00.194 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-21 15:51:00.199 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-01-21 15:51:00.199 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-01-21 15:51:00.211 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-01-21 15:51:00.246 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-01-21 15:51:00.358 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_1
+2019-01-21 15:51:00.361 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_1
+2019-01-21 15:51:00.363 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_1
+2019-01-21 15:51:00.365 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectByPageUsingGET_1
+2019-01-21 15:51:00.376 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_2
+2019-01-21 15:51:00.383 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_2
+2019-01-21 15:51:00.389 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_2
+2019-01-21 15:51:00.392 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: deleteUsingDELETE_3
+2019-01-21 15:51:00.394 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: getByIdUsingGET_3
+2019-01-21 15:51:00.396 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectAllUsingGET_3
+2019-01-21 15:51:00.398 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator -
+				Generating unique operation named: selectByPageUsingGET_2
+2019-01-21 15:51:00.416 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:51:00.423 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2019-01-21 15:51:00.438 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8000 (http) with context path ''
+2019-01-21 15:51:00.443 [restartedMain] INFO  com.zhiyesoft.vote.MyVoteApplication -
+				Started MyVoteApplication in 10.812 seconds (JVM running for 11.602)
+2019-01-21 15:51:12.023 [http-nio-8000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-21 15:51:12.024 [http-nio-8000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-21 15:51:12.054 [http-nio-8000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-01-21 15:51:18.674 [http-nio-8000-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2019-01-21 15:51:18.819 [http-nio-8000-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2019-01-21 15:52:14.502 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2019-01-21 15:52:14.503 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c26c93f: startup date [Mon Jan 21 15:50:52 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1d31b38e
+2019-01-21 15:52:14.507 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2019-01-21 15:52:14.510 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2019-01-21 15:52:14.511 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2019-01-21 15:52:14.513 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Shutting down EhCache CacheManager
+2019-01-21 15:52:14.532 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2019-01-21 15:52:14.537 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2019-01-21 15:52:14.538 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:52:14.651 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.catalina.core.StandardService -
+				Stopping service [Tomcat]
+2019-01-21 15:52:14.654 [localhost-startStop-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-01-21 15:52:14.661 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8000"]
+2019-01-21 15:52:14.664 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Destroying ProtocolHandler ["http-nio-8000"]
