@@ -50,6 +50,6 @@ public class QuestionServiceImpl extends BaseServiceImpl<Question> implements IQ
 	public List<QuestionVO> selectAllByTopicId(Integer topicId){
 		List<QuestionVO> questions = this.questionMapper.selectAllByTopicId(topicId);
 		return questions;
-	}
+	} 
 
 }
