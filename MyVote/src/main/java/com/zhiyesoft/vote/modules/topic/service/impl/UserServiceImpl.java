@@ -50,7 +50,7 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements IUserServi
 	public User login(String mobil,String password) {
 		logger.info("用户登录开始,传入的电话号码是：" + mobil);
 		Example example = new Example(User.class);
-		example.createCriteria().andEqualTo("mobil", mobil).andEqualTo("password", password);
+		example.createCriteria().andEqualTo("loginName", mobil).andEqualTo("password", password);
 //		UserCriteria userCriteria = new UserCriteria();
 //		Criteria criteria =  userCriteria.createCriteria();
 //		criteria.andCompanyMobilEqualTo(mobil);
