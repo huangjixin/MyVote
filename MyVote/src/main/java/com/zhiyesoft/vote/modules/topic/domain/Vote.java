@@ -1,7 +1,16 @@
 package com.zhiyesoft.vote.modules.topic.domain;
 
 import java.io.Serializable;
-import javax.persistence.*;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.alibaba.fastjson.annotation.JSONField;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Table(name = "vote")
 public class Vote implements Serializable {
@@ -20,6 +29,12 @@ public class Vote implements Serializable {
 
     @Column(name = "WEIGHT")
     private Integer weight;
+
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss") //FastJson包使用注解 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8") //Jackson包使用注解 
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") //格式化前台日期参数注解 
+    @Column(name = "CREATE_DATE")
+    private Date createDate;
 
     private static final long serialVersionUID = 1L;
 
@@ -93,6 +108,20 @@ public class Vote implements Serializable {
         this.weight = weight;
     }
 
+    /**
+     * @return CREATE_DATE
+     */
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    /**
+     * @param createDate
+     */
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -109,7 +138,8 @@ public class Vote implements Serializable {
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
             && (this.getQuestionId() == null ? other.getQuestionId() == null : this.getQuestionId().equals(other.getQuestionId()))
             && (this.getOptionId() == null ? other.getOptionId() == null : this.getOptionId().equals(other.getOptionId()))
-            && (this.getWeight() == null ? other.getWeight() == null : this.getWeight().equals(other.getWeight()));
+            && (this.getWeight() == null ? other.getWeight() == null : this.getWeight().equals(other.getWeight()))
+            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()));
     }
 
     @Override
@@ -121,6 +151,7 @@ public class Vote implements Serializable {
         result = prime * result + ((getQuestionId() == null) ? 0 : getQuestionId().hashCode());
         result = prime * result + ((getOptionId() == null) ? 0 : getOptionId().hashCode());
         result = prime * result + ((getWeight() == null) ? 0 : getWeight().hashCode());
+        result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
         return result;
     }
 
@@ -135,6 +166,7 @@ public class Vote implements Serializable {
         sb.append(", questionId=").append(questionId);
         sb.append(", optionId=").append(optionId);
         sb.append(", weight=").append(weight);
+        sb.append(", createDate=").append(createDate);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
