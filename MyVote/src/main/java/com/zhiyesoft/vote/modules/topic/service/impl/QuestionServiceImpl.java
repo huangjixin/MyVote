@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.github.pagehelper.PageInfo;
 import com.zhiyesoft.vote.basic.core.service.impl.BaseServiceImpl;
 import com.zhiyesoft.vote.modules.topic.domain.Question;
 import com.zhiyesoft.vote.modules.topic.mapper.QuestionMapper;
@@ -42,5 +43,7 @@ public class QuestionServiceImpl extends BaseServiceImpl<Question> implements IQ
 	protected Logger getLogger() {
 		return logger;
 	}
+
+	
 
 }

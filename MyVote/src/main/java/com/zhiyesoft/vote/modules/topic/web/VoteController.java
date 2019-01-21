@@ -1,11 +1,8 @@
 package com.zhiyesoft.vote.modules.topic.web;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -20,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.github.pagehelper.PageInfo;
 import com.zhiyesoft.vote.basic.core.vo.Response;
-import com.zhiyesoft.vote.modules.topic.domain.User;
 import com.zhiyesoft.vote.modules.topic.domain.Vote;
 import com.zhiyesoft.vote.modules.topic.service.IVoteService;
 
@@ -48,25 +45,42 @@ public class VoteController {
 	@ApiOperation(value = "刪除对象", notes = "")
 	@DeleteMapping(value = "delete/{id}")
 	@ResponseBody
-	public int delete(@PathVariable(name = "id") String id) {
+	public Response delete(@PathVariable(name = "id") String id) {
+		Response response = new Response();
 		int result = voteService.deleteByPrimaryKey(id);
-		return result;
+		response.setData(result);
+		return response;
 	}
 
 	@ApiOperation(value = "查看对象", notes = "")
 	@GetMapping(value = "view/{id}")
 	@ResponseBody
-	public Vote getById(@PathVariable(name = "id") String id) {
+	public Response getById(@PathVariable(name = "id") String id) {
+		Response response = new Response();
 		Vote record = voteService.selectByPrimaryKey(id);
-		return record;
+		response.setData(record);
+		return response;
 	}
 
-	@ApiOperation(value = "查看全部对象", notes = "")
+	@ApiOperation(value = "查看全部对象", notes = "查看全部对象")
 	@GetMapping(value = "selectAll")
 	@ResponseBody
-	public List<Vote> selectAll() {
+	public Response selectAll() {
+		Response response = new Response();
 		List<Vote> list = voteService.selectAll();
-		return list;
+		response.setData(list);
+		return response;
+	}
+
+	@ApiOperation(value = "分页查看对象", notes = "分页查看对象")
+	@GetMapping(value = "selectByPage")
+	@ResponseBody
+	public Response selectByPage(@RequestParam(value = "page", defaultValue = "1") Integer page,
+			@RequestParam(value = "size", defaultValue = "10") Integer size) {
+		Response response = new Response();
+		PageInfo<Vote> pageInfo = voteService.selectByExample(null, page, size);
+		response.setData(pageInfo);
+		return response;
 	}
 
 }

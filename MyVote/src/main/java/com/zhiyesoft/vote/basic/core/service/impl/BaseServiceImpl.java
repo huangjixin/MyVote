@@ -9,6 +9,8 @@ import org.apache.ibatis.session.RowBounds;
 import org.slf4j.Logger;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.zhiyesoft.vote.basic.core.service.IBaseService;
 
 import tk.mybatis.mapper.common.Mapper;
@@ -123,6 +125,15 @@ public abstract class BaseServiceImpl<T> implements IBaseService<T> {
 		List<T> list = getBaseMapper().selectAll();
 		return list;
 	}
+	
+	@Transactional(readOnly = true)
+	@Override
+	public PageInfo<T> selectByExample(Object example, Integer page, Integer size) {
+		PageHelper.startPage(page,size);    //只生效一次。做两次sql查询，总数查询一次，分页查询一次
+		List<T> list =  getBaseMapper().selectByExample(example);
+		PageInfo<T> pageInfo = new PageInfo<T>(list);
+		return pageInfo;
+	}
 
 	@Transactional(readOnly = true)
 	@Override
@@ -168,7 +179,13 @@ public abstract class BaseServiceImpl<T> implements IBaseService<T> {
 	@Transactional(readOnly = true)
 	@Override
 	public T selectOne(T record) {
+		if (getLogger().isDebugEnabled()) {
+			getLogger().debug(getBaseMessage() + "查询对象开始，传入的参数是：" + record.toString());
+		}
 		T reco = getBaseMapper().selectOne(record);
+		if (getLogger().isDebugEnabled()) {
+			getLogger().debug(getBaseMessage() + "查询对象结束，结果是：" + (reco == null ? "null" :  reco.toString()));
+		}
 		return reco;
 	}
 
