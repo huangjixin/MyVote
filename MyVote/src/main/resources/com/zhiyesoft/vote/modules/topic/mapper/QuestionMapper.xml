@@ -25,4 +25,65 @@
     ID, NAME, CODE, STATUS, TYPE, IS_VALID, SORT_NUM, CREATE_TIME, UPDATE_TIME, DESCRIPTION, 
     EXPIRED_DATE, TOPIC_ID
   </sql>
+  
+    <resultMap id="OptionVOResultMap" type="com.zhiyesoft.vote.modules.topic.vo.OptionVO">
+    <id column="OPTION_ID" jdbcType="VARCHAR" property="id" />
+    <result column="OPTION_NAME" jdbcType="VARCHAR" property="name" />
+    <result column="OPTION_CODE" jdbcType="VARCHAR" property="code" />
+    <result column="OPTION_STATUS" jdbcType="INTEGER" property="status" />
+    <result column="OPTION_TYPE" jdbcType="INTEGER" property="type" />
+    <result column="OPTION_IS_VALID" jdbcType="INTEGER" property="isValid" />
+    <result column="OPTION_SORT_NUM" jdbcType="INTEGER" property="sortNum" />
+    <result column="OPTION_CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="OPTION_UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="OPTION_DESCRIPTION" jdbcType="VARCHAR" property="description" />
+    <result column="QUESTION_ID" jdbcType="VARCHAR" property="questionId" />
+  </resultMap>
+  
+  <resultMap id="QuestionVOResultMap" type="com.zhiyesoft.vote.modules.topic.vo.QuestionVO">
+  	<id column="QUES_ID" jdbcType="VARCHAR" property="id" />
+    <result column="QUES_NAME" jdbcType="VARCHAR" property="name" />
+    <result column="QUES_CODE" jdbcType="VARCHAR" property="code" />
+    <result column="QUES_STATUS" jdbcType="INTEGER" property="status" />
+    <result column="QUES_TYPE" jdbcType="INTEGER" property="type" />
+    <result column="QUES_IS_VALID" jdbcType="INTEGER" property="isValid" />
+    <result column="QUES_SORT_NUM" jdbcType="INTEGER" property="sortNum" />
+    <result column="QUES_CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="QUES_UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="QUES_DESCRIPTION" jdbcType="VARCHAR" property="description" />
+    <result column="QUES_EXPIRED_DATE" jdbcType="TIMESTAMP" property="expiredDate" />
+    <result column="TOPIC_ID" jdbcType="INTEGER" property="topicId" />
+    <collection property="options" javaType="ArrayList" ofType="com.zhiyesoft.vote.modules.topic.vo.OptionVO" resultMap="OptionVOResultMap" />
+  </resultMap>
+  
+  <select id="selectAllByTopicId" resultMap="QuestionVOResultMap" >
+  	SELECT
+		a.ID AS QUES_ID, 
+		a.NAME AS QUES_NAME, 
+		a.CODE AS QUES_CODE, 
+		a.STATUS AS QUES_STATUS,
+		a.TYPE AS QUES_TYPE, 
+		a.IS_VALID AS QUES_IS_VALID, 
+		a.SORT_NUM AS QUES_SORT_NUM, 
+		a.CREATE_TIME AS QUES_CREATE_TIME, 
+		a.UPDATE_TIME AS QUES_UPDATE_TIME, 
+		a.DESCRIPTION AS QUES_DESCRIPTION, 
+		a.EXPIRED_DATE AS QUES_EXPIRED_DATE, 
+		a.TOPIC_ID AS TOPIC_ID,
+		b.ID AS OPTION_ID, 
+		b.NAME AS OPTION_NAME, 
+		b.CODE AS OPTION_CODE, 
+		b.STATUS AS OPTION_STATUS, 
+		b.TYPE AS OPTION_TYPE, 
+		b.IS_VALID AS OPTION_IS_VALID, 
+		b.SORT_NUM AS OPTION_SORT_NUM, 
+		b.CREATE_TIME AS OPTION_CREATE_TIME, 
+		b.UPDATE_TIME AS OPTION_UPDATE_TIME, 
+		b.DESCRIPTION AS OPTION_DESCRIPTION
+	FROM
+		question AS a
+		LEFT JOIN `option` AS b ON a.ID = b.QUESTION_ID 
+	WHERE
+		a.IS_VALID = 1 AND a.TOPIC_ID = #{topicId}
+  </select>
 </mapper>
