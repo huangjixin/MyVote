@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyesoft.cloud.modules.system.mapper.SystemResourceMapper">
+  <resultMap id="BaseResultMap" type="com.zhiyesoft.cloud.modules.system.domain.SystemResource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="CODE" jdbcType="VARCHAR" property="code" />
+    <result column="STATUS" jdbcType="INTEGER" property="status" />
+    <result column="TYPE" jdbcType="INTEGER" property="type" />
+    <result column="IS_LOCKED" jdbcType="INTEGER" property="isLocked" />
+    <result column="IS_VALID" jdbcType="INTEGER" property="isValid" />
+    <result column="SORT_NUM" jdbcType="INTEGER" property="sortNum" />
+    <result column="CREATE_BY" jdbcType="VARCHAR" property="createBy" />
+    <result column="UPDATE_BY" jdbcType="VARCHAR" property="updateBy" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="PARENT_ID" jdbcType="VARCHAR" property="parentId" />
+    <result column="ICON" jdbcType="VARCHAR" property="icon" />
+    <result column="LEVEL" jdbcType="INTEGER" property="level" />
+    <result column="IS_LEAF" jdbcType="TINYINT" property="isLeaf" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, NAME, CODE, STATUS, TYPE, IS_LOCKED, IS_VALID, SORT_NUM, CREATE_BY, UPDATE_BY, 
+    CREATE_TIME, UPDATE_TIME, PARENT_ID, ICON, LEVEL, IS_LEAF
+  </sql>
+</mapper>

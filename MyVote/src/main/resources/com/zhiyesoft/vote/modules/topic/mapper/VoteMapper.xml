@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyesoft.vote.modules.topic.mapper.VoteMapper">
+  <resultMap id="BaseResultMap" type="com.zhiyesoft.vote.modules.topic.domain.Vote">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="USER_ID" jdbcType="VARCHAR" property="userId" />
+    <result column="QUESTION_ID" jdbcType="VARCHAR" property="questionId" />
+    <result column="OPTION_ID" jdbcType="VARCHAR" property="optionId" />
+    <result column="WEIGHT" jdbcType="INTEGER" property="weight" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, USER_ID, QUESTION_ID, OPTION_ID, WEIGHT
+  </sql>
+</mapper>
