@@ -9,7 +9,6 @@ class MobileAuth extends Component {
     }
 
     mobileLoginAuth = () => {
-        alert('mobileLoginAuth');
         if (window.sessionStorage) {
             let sessionStorage = window.sessionStorage;
             let userInfoStr = sessionStorage.getItem('userInfo');
@@ -34,7 +33,7 @@ class MobileAuth extends Component {
     
     render() {
         return (
-            <div></div>
+            <div style={{ display: 'flex', flex: 1 }}></div>
         );
     }
 }

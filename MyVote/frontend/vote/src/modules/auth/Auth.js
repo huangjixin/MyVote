@@ -58,7 +58,7 @@ class Auth extends Component {
 
     render() {
         return (
-            <div></div>
+            <div style={{ display: 'flex', flex: 1 }}></div>
         );
     }
 }
