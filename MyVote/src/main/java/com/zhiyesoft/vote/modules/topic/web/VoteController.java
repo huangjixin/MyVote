@@ -15,13 +15,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.github.pagehelper.PageInfo;
 import com.zhiyesoft.vote.basic.core.vo.Response;
+import com.zhiyesoft.vote.modules.topic.domain.Customer;
 import com.zhiyesoft.vote.modules.topic.domain.Vote;
+import com.zhiyesoft.vote.modules.topic.service.ICustomerService;
 import com.zhiyesoft.vote.modules.topic.service.IVoteService;
 
 import io.swagger.annotations.Api;
@@ -34,6 +37,9 @@ public class VoteController {
 
 	@Autowired
 	private IVoteService voteService;
+
+	@Autowired
+	private ICustomerService customerService;
 
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
@@ -73,6 +79,33 @@ public class VoteController {
 		}
 		Response response = new Response();
 		Integer result = voteService.insertSelective(vote);
+		if (result > 0) {
+			response.setMessage("插入成功");
+		} else {
+			response.setMessage("插入失败");
+			response.setCode("500");
+		}
+		return response;
+	}
+
+	@ApiOperation(value = "投票", notes = "")
+	@PostMapping(value = "insertVotes")
+	@ResponseBody
+	public Response insertVotes(@RequestBody List<Vote> votes, @RequestParam(value = "userId") Integer userId,
+			@RequestParam(value = "topicId") Integer topicId, @RequestParam(value = "mobile") String mobile,
+			@RequestParam(value = "custname") String custname) {
+		Response response = new Response();
+		Customer customer = new Customer();
+		String customerId = UUID.randomUUID().toString().replaceAll("-", "");
+		customer.setId(customerId);
+		customer.setMobile(mobile);
+		customer.setName(custname);
+		customerService.insertSelective(customer);
+		for (Vote vote : votes) {
+			vote.setId(UUID.randomUUID().toString().replaceAll("-", ""));
+			vote.setClientId(customerId);
+		}
+		int result = this.voteService.insert(votes);
 		if (result > 0) {
 			response.setMessage("插入成功");
 		} else {
