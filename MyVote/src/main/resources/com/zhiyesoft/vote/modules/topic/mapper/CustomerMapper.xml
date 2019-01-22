@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyesoft.vote.modules.topic.mapper.CustomerMapper">
+  <resultMap id="BaseResultMap" type="com.zhiyesoft.vote.modules.topic.domain.Customer">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="SORT_NUM" jdbcType="INTEGER" property="sortNum" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="MOBILE" jdbcType="VARCHAR" property="mobile" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, SORT_NUM, NAME, MOBILE, CREATE_DATE
+  </sql>
+</mapper>

@@ -3,6 +3,7 @@ package com.zhiyesoft.vote.modules.topic.web;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -59,6 +61,24 @@ public class VoteController {
 		Response response = new Response();
 		Vote record = voteService.selectByPrimaryKey(id);
 		response.setData(record);
+		return response;
+	}
+
+	@ApiOperation(value = "查看对象", notes = "")
+	@PostMapping(value = "insert")
+	@ResponseBody
+	public Response insert(Vote vote) {
+		if (vote.getId() == null) {
+			vote.setId(UUID.randomUUID().toString().replaceAll("-", ""));
+		}
+		Response response = new Response();
+		Integer result = voteService.insertSelective(vote);
+		if (result > 0) {
+			response.setMessage("插入成功");
+		} else {
+			response.setMessage("插入失败");
+			response.setCode("500");
+		}
 		return response;
 	}
 

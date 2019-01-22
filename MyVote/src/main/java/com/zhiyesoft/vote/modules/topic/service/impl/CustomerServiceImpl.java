@@ -1,7 +1,5 @@
 package com.zhiyesoft.vote.modules.topic.service.impl;
 
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,30 +7,30 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.zhiyesoft.vote.basic.core.service.impl.BaseServiceImpl;
-import com.zhiyesoft.vote.modules.topic.domain.Vote;
-import com.zhiyesoft.vote.modules.topic.mapper.VoteMapper;
-import com.zhiyesoft.vote.modules.topic.service.IVoteService;
+import com.zhiyesoft.vote.modules.topic.domain.Customer;
+import com.zhiyesoft.vote.modules.topic.mapper.CustomerMapper;
+import com.zhiyesoft.vote.modules.topic.service.ICustomerService;
 
 import tk.mybatis.mapper.common.Mapper;
 
 @Transactional(rollbackFor = Exception.class)
 @Service
-public class VoteServiceImpl extends BaseServiceImpl<Vote> implements IVoteService {
+public class CustomerServiceImpl extends BaseServiceImpl<Customer> implements ICustomerService {
 
 ////////////////////////////////////////////////////////
 ///// 变量区域
 ////////////////////////////////////////////////////////
 
-	private static Logger logger = LoggerFactory.getLogger(VoteServiceImpl.class);
+	private static Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
 
-	private static final String BASE_MESSAGE = "系统用户模块类UserServiceImpl增删改查";
+	private static final String BASE_MESSAGE = "模块类CustomerServiceImpl增删改查";
 
 	@Autowired
-	private VoteMapper voteMapper;
+	private CustomerMapper userMapper;
 
 	@Override
-	protected Mapper<Vote> getBaseMapper() {
-		return this.voteMapper;
+	protected Mapper<Customer> getBaseMapper() {
+		return this.userMapper;
 	}
 
 	@Override
@@ -45,10 +43,5 @@ public class VoteServiceImpl extends BaseServiceImpl<Vote> implements IVoteServi
 		return logger;
 	}
 
-	@Override
-	public int insert(List<Vote> records) {
-		int result = this.voteMapper.insertBatch(records);
-		return result;
-	}
 
 }

@@ -3618,3 +3618,261 @@ Using generated security password: 1aca4304-97cc-407d-85cf-1ea5a3c3bbe7
 				用户登录开始,传入的电话号码是：lwj
 2019-01-21 18:40:11.448 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
 				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:45:43.564 [http-nio-8000-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:46:37.745 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:37.762 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:44.355 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:44.374 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:45.069 [http-nio-8000-exec-5] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:45.083 [http-nio-8000-exec-5] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:45.596 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:45.613 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:45.913 [http-nio-8000-exec-9] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:45.927 [http-nio-8000-exec-9] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:46.089 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:46.103 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:46.261 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:46.275 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:46:46.404 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：lwj
+2019-01-21 18:46:46.417 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：User [Hash = 1829130756, id=3, name=lwj, code=null, status=null, type=null, isVoteed=0, isValid=1, sortNum=3, createTime=Mon Jan 21 18:23:09 CST 2019, updateTime=null, description=null, weight=null, departmnetName=null, loginName=lwj, password=123, serialVersionUID=1]
+2019-01-21 18:47:37.366 [http-nio-8000-exec-8] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:49:23.070 [http-nio-8000-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:49:54.890 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 18:49:54.905 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:51:52.397 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s81ms390µs672ns).
+2019-01-21 18:52:17.656 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 18:52:17.670 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:52:50.215 [http-nio-8000-exec-3] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/vote/user/login%20] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 18:52:56.392 [http-nio-8000-exec-2] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/vote/user/login%20] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 18:53:05.084 [http-nio-8000-exec-4] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/vote/user/login%20] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 18:53:58.979 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 18:53:58.994 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:54:30.468 [http-nio-8000-exec-5] WARN  org.springframework.web.servlet.PageNotFound -
+				No mapping found for HTTP request with URI [/vote/user/login%20] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-21 18:54:37.757 [http-nio-8000-exec-10] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:54:38.858 [http-nio-8000-exec-9] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:54:39.732 [http-nio-8000-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:54:48.977 [http-nio-8000-exec-3] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:54:49.924 [http-nio-8000-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:54:57.546 [http-nio-8000-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:54:58.659 [http-nio-8000-exec-6] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:55:23.844 [http-nio-8000-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:55:26.211 [http-nio-8000-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 18:56:01.074 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 18:56:01.092 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:57:23.169 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：17724272471
+2019-01-21 18:57:23.195 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:57:44.733 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：17724272471
+2019-01-21 18:57:44.753 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:58:00.999 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：17724272471
+2019-01-21 18:58:01.021 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 18:59:31.901 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：17724272471
+2019-01-21 18:59:31.918 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:00:04.572 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:00:04.591 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:02:06.400 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:02:06.418 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:02:40.945 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:02:40.960 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:03:37.921 [http-nio-8000-exec-6] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 19:03:54.456 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:03:54.477 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:04:31.971 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:04:31.989 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:07.253 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:07.270 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:13.908 [http-nio-8000-exec-9] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:13.924 [http-nio-8000-exec-9] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:16.585 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:16.600 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:17.406 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:17.458 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:18.075 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:18.092 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:18.863 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:18.879 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:19.388 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:19.422 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:05:57.046 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:05:57.063 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:06:07.526 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:06:07.555 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:06:13.178 [http-nio-8000-exec-5] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:06:13.195 [http-nio-8000-exec-5] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:06:51.081 [http-nio-8000-exec-10] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 19:07:07.774 [http-nio-8000-exec-9] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:07:07.788 [http-nio-8000-exec-9] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:07:08.978 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:07:09.001 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:07:19.090 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:07:19.107 [http-nio-8000-exec-3] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:07:20.165 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:07:20.186 [http-nio-8000-exec-2] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:07:39.298 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:07:39.314 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:07:40.457 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:07:40.476 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:09:21.842 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:09:21.858 [http-nio-8000-exec-7] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-21 19:10:08.499 [http-nio-8000-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-21 19:10:25.333 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-21 19:10:25.356 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:28:43.791 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-22 09:28:44.004 [http-nio-8000-exec-4] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:28:45.111 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-22 09:28:45.128 [http-nio-8000-exec-6] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:28:46.398 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-22 09:28:46.418 [http-nio-8000-exec-8] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:30:40.439 [http-nio-8000-exec-5] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：1
+2019-01-22 09:30:40.452 [http-nio-8000-exec-5] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:30:48.306 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：2
+2019-01-22 09:30:48.329 [http-nio-8000-exec-10] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:34:34.970 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录开始,传入的电话号码是：17724272471
+2019-01-22 09:34:34.983 [http-nio-8000-exec-1] INFO  c.z.v.modules.topic.service.impl.UserServiceImpl -
+				用户登录结束，结果是：查询不到用户
+2019-01-22 09:35:45.758 [http-nio-8000-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-22 09:36:18.126 [http-nio-8000-exec-6] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-22 09:45:30.141 [http-nio-8000-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-22 09:46:39.178 [http-nio-8000-exec-10] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-22 09:47:29.802 [http-nio-8000-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-22 09:51:20.319 [http-nio-8000-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'mobil' is not present]
+2019-01-22 09:52:23.458 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2019-01-22 09:52:23.458 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39a1549: startup date [Mon Jan 21 18:38:50 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67aad918
+2019-01-22 09:52:23.461 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2019-01-22 09:52:23.464 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2019-01-22 09:52:23.464 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2019-01-22 09:52:23.467 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.cache.ehcache.EhCacheManagerFactoryBean -
+				Shutting down EhCache CacheManager
+2019-01-22 09:52:23.485 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2019-01-22 09:52:23.488 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2019-01-22 09:52:23.489 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8000"]
+2019-01-22 09:52:23.666 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.catalina.core.StandardService -
+				Stopping service [Tomcat]
+2019-01-22 09:52:23.669 [localhost-startStop-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-01-22 09:52:23.674 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8000"]
+2019-01-22 09:52:23.677 [RMI TCP Connection(2)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Destroying ProtocolHandler ["http-nio-8000"]

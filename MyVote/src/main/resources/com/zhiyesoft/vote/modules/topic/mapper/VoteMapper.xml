@@ -10,11 +10,18 @@
     <result column="QUESTION_ID" jdbcType="VARCHAR" property="questionId" />
     <result column="OPTION_ID" jdbcType="VARCHAR" property="optionId" />
     <result column="WEIGHT" jdbcType="INTEGER" property="weight" />
+    <result column="CLIENT_ID" jdbcType="VARCHAR" property="clientId" />
   </resultMap>
   <sql id="Base_Column_List">
-    <!--
-      WARNING - @mbg.generated
-    -->
     ID, USER_ID, QUESTION_ID, OPTION_ID, WEIGHT
   </sql>
+  
+    <insert id="insertBatch">
+    INSERT INTO vote
+            (ID,USER_ID, QUESTION_ID,OPTION_ID,WEIGHT,CLIENT_ID)
+    VALUES
+    <foreach collection ="list" item="vote" separator =",">
+         (#{vote.id},#{vote.userId}, #{vote.questionId}, #{vote.optionId}, #{vote.weight}, #{vote.clientId})
+    </foreach >
+  </insert>
 </mapper>

@@ -12,23 +12,20 @@ import org.springframework.format.annotation.DateTimeFormat;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-@Table(name = "vote")
-public class Vote implements Serializable {
+@Table(name = "customer")
+public class Customer implements Serializable {
     @Id
     @Column(name = "ID")
     private String id;
 
-    @Column(name = "USER_ID")
-    private String userId;
+    @Column(name = "SORT_NUM")
+    private Integer sortNum;
 
-    @Column(name = "QUESTION_ID")
-    private String questionId;
+    @Column(name = "NAME")
+    private String name;
 
-    @Column(name = "OPTION_ID")
-    private String optionId;
-
-    @Column(name = "WEIGHT")
-    private Integer weight;
+    @Column(name = "MOBILE")
+    private String mobile;
 
     @JSONField(format = "yyyy-MM-dd HH:mm:ss") //FastJson包使用注解 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8") //Jackson包使用注解 
@@ -36,9 +33,6 @@ public class Vote implements Serializable {
     @Column(name = "CREATE_DATE")
     private Date createDate;
 
-    @Column(name = "CLIENT_ID")
-    private String clientId;
-    
     private static final long serialVersionUID = 1L;
 
     /**
@@ -56,59 +50,45 @@ public class Vote implements Serializable {
     }
 
     /**
-     * @return USER_ID
+     * @return SORT_NUM
      */
-    public String getUserId() {
-        return userId;
+    public Integer getSortNum() {
+        return sortNum;
     }
 
     /**
-     * @param userId
+     * @param sortNum
      */
-    public void setUserId(String userId) {
-        this.userId = userId == null ? null : userId.trim();
+    public void setSortNum(Integer sortNum) {
+        this.sortNum = sortNum;
     }
 
     /**
-     * @return QUESTION_ID
+     * @return NAME
      */
-    public String getQuestionId() {
-        return questionId;
+    public String getName() {
+        return name;
     }
 
     /**
-     * @param questionId
+     * @param name
      */
-    public void setQuestionId(String questionId) {
-        this.questionId = questionId == null ? null : questionId.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
     /**
-     * @return OPTION_ID
+     * @return MOBILE
      */
-    public String getOptionId() {
-        return optionId;
+    public String getMobile() {
+        return mobile;
     }
 
     /**
-     * @param optionId
+     * @param mobile
      */
-    public void setOptionId(String optionId) {
-        this.optionId = optionId == null ? null : optionId.trim();
-    }
-
-    /**
-     * @return WEIGHT
-     */
-    public Integer getWeight() {
-        return weight;
-    }
-
-    /**
-     * @param weight
-     */
-    public void setWeight(Integer weight) {
-        this.weight = weight;
+    public void setMobile(String mobile) {
+        this.mobile = mobile == null ? null : mobile.trim();
     }
 
     /**
@@ -136,12 +116,11 @@ public class Vote implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        Vote other = (Vote) that;
+        Customer other = (Customer) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getQuestionId() == null ? other.getQuestionId() == null : this.getQuestionId().equals(other.getQuestionId()))
-            && (this.getOptionId() == null ? other.getOptionId() == null : this.getOptionId().equals(other.getOptionId()))
-            && (this.getWeight() == null ? other.getWeight() == null : this.getWeight().equals(other.getWeight()))
+            && (this.getSortNum() == null ? other.getSortNum() == null : this.getSortNum().equals(other.getSortNum()))
+            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+            && (this.getMobile() == null ? other.getMobile() == null : this.getMobile().equals(other.getMobile()))
             && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()));
     }
 
@@ -150,10 +129,9 @@ public class Vote implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
-        result = prime * result + ((getQuestionId() == null) ? 0 : getQuestionId().hashCode());
-        result = prime * result + ((getOptionId() == null) ? 0 : getOptionId().hashCode());
-        result = prime * result + ((getWeight() == null) ? 0 : getWeight().hashCode());
+        result = prime * result + ((getSortNum() == null) ? 0 : getSortNum().hashCode());
+        result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
+        result = prime * result + ((getMobile() == null) ? 0 : getMobile().hashCode());
         result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
         return result;
     }
@@ -165,21 +143,12 @@ public class Vote implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", userId=").append(userId);
-        sb.append(", questionId=").append(questionId);
-        sb.append(", optionId=").append(optionId);
-        sb.append(", weight=").append(weight);
+        sb.append(", sortNum=").append(sortNum);
+        sb.append(", name=").append(name);
+        sb.append(", mobile=").append(mobile);
         sb.append(", createDate=").append(createDate);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
     }
-
-	public String getClientId() {
-		return clientId;
-	}
-
-	public void setClientId(String clientId) {
-		this.clientId = clientId;
-	}
 }
