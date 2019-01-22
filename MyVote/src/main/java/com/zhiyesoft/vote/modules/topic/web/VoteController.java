@@ -142,7 +142,7 @@ public class VoteController {
 		return response;
 	}
 
-	@RequestMapping("export")
+	@GetMapping("export")
 	public void export(HttpServletResponse response) {
 
 		// 模拟从数据库获取需要导出的数据
@@ -164,7 +164,7 @@ public class VoteController {
 		}
 	}
 
-	@RequestMapping("importExcel")
+	@GetMapping("importExcel")
 	public void importExcel() {
 		String filePath = "F:\\海贼王.xls";
 		// 解析excel，
