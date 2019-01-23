@@ -31,6 +31,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.code.kaptcha.Producer;
+import com.zhiyesoft.vote.basic.core.vo.Response;
 import com.zhiyesoft.vote.modules.topic.domain.User;
 import com.zhiyesoft.vote.modules.topic.service.IUserService;
 
@@ -63,36 +64,44 @@ public class UserController {
 	@ApiOperation(value = "刪除对象", notes = "")
 	@DeleteMapping(value = "delete/{id}")
 	@ResponseBody
-	public int delete(@PathVariable(name = "id") String id) {
+	public Response delete(@PathVariable(name = "id") String id) {
+		Response response = new Response();
 		int result = userService.deleteByPrimaryKey(id);
-		return result;
+		response.setData(result);
+		return response;
 	}
 
 	@ApiOperation(value = "查看对象", notes = "")
 	@GetMapping(value = "view/{id}")
 	@ResponseBody
-	public User getById(@PathVariable(name = "id") Integer id) {
+	public Response getById(@PathVariable(name = "id") Integer id) {
+		Response response = new Response();
 		User record = userService.selectByPrimaryKey(id);
-		return record;
+		response.setData(record);
+		return response;
 	}
 
 	@ApiOperation(value = "查看全部对象", notes = "")
 	@GetMapping(value = "selectAll")
 	@ResponseBody
-	public List<User> selectAll() {
+	public Response selectAll() {
+		Response response = new Response();
 		List<User> list = userService.selectAll();
-		return list;
+		response.setDataList(list);
+		return response;
 	}
 
 	@ApiOperation(value = "登陆接口，如果登陆不成功则返回null，反则返回数据库第一个人的信息", notes = "登陆接口，如果登陆不成功则返回null，反则返回数据库第一个人的信息")
 	@PostMapping(value = "login")
 	@ResponseBody
-	public User login(@RequestParam(value = "mobil") String mobil, @RequestParam(value = "password") String password) {
+	public Response login(@RequestParam(value = "mobil") String mobil, @RequestParam(value = "password") String password) {
+		Response response = new Response();
 		User user = userService.login(mobil, password);
 		if (user == null) {
 			user = new User();
 		}
-		return user;
+		response.setData(user);
+		return response;
 	}
 
 	@ApiOperation(value = "createImg", notes = "")

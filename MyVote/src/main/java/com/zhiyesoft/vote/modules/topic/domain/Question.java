@@ -4,11 +4,6 @@ import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
-import com.alibaba.fastjson.annotation.JSONField;
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 @Table(name = "question")
 public class Question implements Serializable {
     @Id
@@ -32,9 +27,7 @@ public class Question implements Serializable {
 
     @Column(name = "SORT_NUM")
     private Integer sortNum;
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss") //FastJson包使用注解 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8") //Jackson包使用注解 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") //格式化前台日期参数注解 
+
     @Column(name = "CREATE_TIME")
     private Date createTime;
 
@@ -43,9 +36,7 @@ public class Question implements Serializable {
 
     @Column(name = "DESCRIPTION")
     private String description;
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss") //FastJson包使用注解 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8") //Jackson包使用注解 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") //格式化前台日期参数注解 
+
     @Column(name = "EXPIRED_DATE")
     private Date expiredDate;
 

@@ -60,5 +60,4 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements IUserServi
 		logger.info("用户登录结束，结果是：" + res);
 		return (list != null && !list.isEmpty()) ? list.get(0) : null;
 	}
-
 }

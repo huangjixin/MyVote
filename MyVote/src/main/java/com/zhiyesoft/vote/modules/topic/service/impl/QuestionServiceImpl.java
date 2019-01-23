@@ -48,7 +48,13 @@ public class QuestionServiceImpl extends BaseServiceImpl<Question> implements IQ
 	}
 
 	public List<QuestionVO> selectAllByTopicId(Integer topicId){
+		if(logger.isDebugEnabled()) {
+			logger.info("根据topicId查询所有问题开始,传入的topicId是: {}", topicId);
+		}
 		List<QuestionVO> questions = this.questionMapper.selectAllByTopicId(topicId);
+		if(logger.isDebugEnabled()) {
+			logger.info("根据topicId查询所有问题结束,查询结果条目数量是: {}", questions.size());
+		}
 		return questions;
 	} 
 

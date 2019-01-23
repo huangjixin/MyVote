@@ -8,7 +8,6 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
@@ -30,8 +29,11 @@ import com.zhiyesoft.vote.basic.core.vo.Response;
 import com.zhiyesoft.vote.modules.topic.domain.Customer;
 import com.zhiyesoft.vote.modules.topic.domain.Vote;
 import com.zhiyesoft.vote.modules.topic.service.ICustomerService;
+import com.zhiyesoft.vote.modules.topic.service.IUserService;
 import com.zhiyesoft.vote.modules.topic.service.IVoteService;
 import com.zhiyesoft.vote.modules.topic.vo.Person;
+import com.zhiyesoft.vote.modules.topic.vo.TopicVO;
+import com.zhiyesoft.vote.modules.topic.vo.VoteVO;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -43,6 +45,9 @@ public class VoteController {
 
 	@Autowired
 	private IVoteService voteService;
+
+	@Autowired
+	private IUserService userService;
 
 	@Autowired
 	private ICustomerService customerService;
@@ -73,24 +78,6 @@ public class VoteController {
 		Response response = new Response();
 		Vote record = voteService.selectByPrimaryKey(id);
 		response.setData(record);
-		return response;
-	}
-
-	@ApiOperation(value = "查看对象", notes = "")
-	@PostMapping(value = "insert")
-	@ResponseBody
-	public Response insert(Vote vote) {
-		if (vote.getId() == null) {
-			vote.setId(UUID.randomUUID().toString().replaceAll("-", ""));
-		}
-		Response response = new Response();
-		Integer result = voteService.insertSelective(vote);
-		if (result > 0) {
-			response.setMessage("插入成功");
-		} else {
-			response.setMessage("插入失败");
-			response.setCode("500");
-		}
 		return response;
 	}
 
@@ -142,6 +129,41 @@ public class VoteController {
 		return response;
 	}
 
+	@ApiOperation(value = "查询topic的所有投票结果", notes = "")
+	@PostMapping(value = "selectResultByTopicId")
+	@ResponseBody
+	public Response selectResultByTopicId(@RequestParam(value = "topicId") Integer topicId) {
+		Response resp = new Response();
+		List<TopicVO> topics = this.voteService.selectResultByTopicId(topicId);
+		resp.setDataList(topics);
+		return resp;
+	}
+
+	@ApiOperation(value = "查询用户的对topic的投票结果", notes = "")
+	@PostMapping(value = "selectTopicResultByUserId")
+	@ResponseBody
+	public Response selectTopicResultByUserId(@RequestParam(value = "userId") String userId,
+			@RequestParam(value = "topicId") Integer topicId) {
+		Response resp = new Response();
+		List<TopicVO> topics = this.voteService.selectTopicResultByUserId(userId, topicId);
+		resp.setDataList(topics);
+		return resp;
+	}
+
+	@ApiOperation(value = "查询投票人和日期", notes = "")
+	@PostMapping(value = "selectVoteByDate")
+	@ResponseBody
+	public Response selectVoteByDate(@RequestParam(value = "startDate", required = false) Date startDate,
+			@RequestParam(value = "endDate", required = false) Date endDate,
+			@RequestParam(value = "userId", required = false) String userId,
+			@RequestParam(value = "page", defaultValue = "1") Integer page,
+			@RequestParam(value = "size", defaultValue = "10") Integer size) {
+		Response resp = new Response();
+		List<VoteVO> votes = this.voteService.selectVoteByDate(startDate, endDate, userId, page, size);
+		resp.setDataList(votes);
+		return resp;
+	}
+
 	@GetMapping("export")
 	public void export(HttpServletResponse response) {
 
@@ -178,8 +200,77 @@ public class VoteController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		// TODO 保存数据库
 	}
 
+	@ApiOperation(value = "导出topic的所有投票结果", notes = "")
+	@GetMapping(value = "exportResultByTopicId")
+	@ResponseBody
+	public Response exportResultByTopicId(@RequestParam(value = "topicId") Integer topicId,
+			HttpServletResponse response) {
+		Response resp = new Response();
+		List<TopicVO> topics = this.voteService.selectResultByTopicId(topicId);
+		try {
+			if (!topics.isEmpty()) {
+				FileUtil.exportExcel(topics, topics.get(0).getTopicName() + "-投票结果", "结果", TopicVO.class,
+						topics.get(0).getTopicName()+"-投票结果.xls", response);
+				resp.setMessage("导出成功");
+			}else {
+				resp.setMessage("导出内容为空");
+			}
+		} catch (Exception e) {
+			resp.setCode("400");
+			resp.setMessage("导出失败");
+		}
+		return resp;
+	}
+	
+	@ApiOperation(value = "导出用户对topic的投票结果", notes = "")
+	@GetMapping(value = "exportTopicResultByUserId")
+	@ResponseBody
+	public Response exportTopicResultByUserId(@RequestParam(value = "userId") String userId,@RequestParam(value = "topicId") Integer topicId,
+			HttpServletResponse response) {
+		Response resp = new Response();
+		List<TopicVO> topics = this.voteService.selectTopicResultByUserId(userId, topicId);
+		try {
+			if (!topics.isEmpty()) {
+				FileUtil.exportExcel(topics, topics.get(0).getTopicName() + "-投票结果", "结果", TopicVO.class,
+						topics.get(0).getTopicName()+"-投票结果.xls", response);
+					resp.setMessage("导出成功");
+			}else {
+				resp.setMessage("导出内容为空");
+			}
+		} catch (Exception e) {
+			resp.setCode("400");
+			resp.setMessage("导出失败");
+			e.printStackTrace();
+		}
+		return resp;
+	}
+	
+	@ApiOperation(value = "导出投票人和日期", notes = "")
+	@PostMapping(value = "exportVoteByDate")
+	@ResponseBody
+	public Response exportVoteByDate(@RequestParam(value = "startDate", required = false) Date startDate,
+			@RequestParam(value = "endDate", required = false) Date endDate,
+			@RequestParam(value = "userId", required = false) String userId,
+			@RequestParam(value = "page", defaultValue = "1") Integer page,
+			@RequestParam(value = "size", defaultValue = "10") Integer size,
+			HttpServletResponse response) {
+		Response resp = new Response();
+		List<VoteVO> votes = this.voteService.selectVoteByDate(startDate, endDate, userId, page, size);
+		try {
+			if (!votes.isEmpty()) {
+				FileUtil.exportExcel(votes, "参与人和参与时间", "结果", VoteVO.class,"参与人和参与时间.xls", response);
+				resp.setMessage("导出成功");
+			}else {
+				resp.setMessage("导出内容为空");
+			}
+		} catch (Exception e) {
+			resp.setCode("400");
+			resp.setMessage("导出失败");
+			e.printStackTrace();
+		}
+		return resp;
+	}
 }
