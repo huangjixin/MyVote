@@ -1,27 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhiyesoft.vote.modules.topic.mapper.VoteMapper">
-  <resultMap id="BaseResultMap" type="com.zhiyesoft.vote.modules.topic.domain.Vote">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <id column="ID" jdbcType="VARCHAR" property="id" />
-    <result column="USER_ID" jdbcType="VARCHAR" property="userId" />
-    <result column="QUESTION_ID" jdbcType="VARCHAR" property="questionId" />
-    <result column="OPTION_ID" jdbcType="VARCHAR" property="optionId" />
-    <result column="WEIGHT" jdbcType="INTEGER" property="weight" />
-    <result column="CLIENT_ID" jdbcType="VARCHAR" property="clientId" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    ID, USER_ID, QUESTION_ID, OPTION_ID, WEIGHT
-  </sql>
-  
-    <insert id="insertBatch">
-    INSERT INTO vote
-            (ID,USER_ID, QUESTION_ID,OPTION_ID,WEIGHT,CLIENT_ID)
-    VALUES
-    <foreach collection ="list" item="vote" separator =",">
-         (#{vote.id},#{vote.userId}, #{vote.questionId}, #{vote.optionId}, #{vote.weight}, #{vote.clientId})
-    </foreach >
-  </insert>
+<mapper
+	namespace="com.zhiyesoft.vote.modules.topic.mapper.VoteMapper">
+	<resultMap id="BaseResultMap"
+		type="com.zhiyesoft.vote.modules.topic.domain.Vote">
+		<!-- WARNING - @mbg.generated -->
+		<id column="ID" jdbcType="VARCHAR" property="id" />
+		<result column="USER_ID" jdbcType="VARCHAR" property="userId" />
+		<result column="QUESTION_ID" jdbcType="VARCHAR"
+			property="questionId" />
+		<result column="OPTION_ID" jdbcType="VARCHAR"
+			property="optionId" />
+		<result column="WEIGHT" jdbcType="INTEGER" property="weight" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		<!-- WARNING - @mbg.generated -->
+		ID, USER_ID, QUESTION_ID, OPTION_ID, WEIGHT
+	</sql>
+
+	<resultMap id="VoteVOMap"
+		type="com.zhiyesoft.vote.modules.topic.vo.VoteVO">
+		<id column="ID" jdbcType="VARCHAR" property="voteId" />
+		<result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+		<result column="USER_ID" jdbcType="VARCHAR" property="userId" />
+		<result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+	</resultMap>
+
+	<resultMap id="TopicVOMap"
+		type="com.zhiyesoft.vote.modules.topic.vo.TopicVO">
+		<id column="OPTION_ID" jdbcType="VARCHAR" property="optionId" />
+		<result column="OPTION_NAME" jdbcType="VARCHAR" property="optionName" />
+		<result column="VOTE_COUNT" jdbcType="INTEGER" property="voteCount" />
+		<result column="QUESTION_ID" jdbcType="VARCHAR" property="questionId" />
+		<result column="QUESTION_NAME" jdbcType="VARCHAR" property="questionName" />
+		<result column="TOPIC_ID" jdbcType="INTEGER" property="topicId" />
+		<result column="TOPIC_NAME" jdbcType="VARCHAR" property="topicName" />
+	</resultMap>
+
+	<insert id="insertBatch">
+		INSERT INTO vote
+		(ID,USER_ID, QUESTION_ID,OPTION_ID,WEIGHT,CLIENT_ID)
+		VALUES
+		<foreach collection="list" item="vote" separator=",">
+			(#{vote.id},#{vote.userId}, #{vote.questionId}, #{vote.optionId},
+			#{vote.weight}, #{vote.clientId})
+		</foreach>
+	</insert>
+
+	<select id="selectResultByTopicId" resultMap="TopicVOMap">
+		SELECT
+			e.ID AS OPTION_ID,
+			e.`NAME` AS OPTION_NAME,
+			e.VOTE_COUNT,
+			f.ID AS QUESTION_ID,
+			f.`NAME` AS QUESTION_NAME,
+			g.id AS TOPIC_ID,
+			g.`name` AS TOPIC_NAME 
+		FROM
+			(
+			SELECT
+				d.ID,
+				d.QUESTION_ID,
+				d.`NAME`,
+			CASE
+					WHEN d.WEIGHT IS NULL THEN
+					0 ELSE SUM( d.WEIGHT ) 
+				END AS VOTE_COUNT 
+			FROM
+				(
+				SELECT
+					b.ID,
+					b.`NAME`,
+					b.QUESTION_ID,
+					c.WEIGHT 
+				FROM
+					( SELECT a.ID, a.`NAME`, a.QUESTION_ID FROM `option` AS a ) AS b
+					LEFT JOIN vote AS c ON b.ID = c.OPTION_ID 
+				) AS d 
+			GROUP BY
+				d.ID,d.`NAME`,d.QUESTION_ID,d.WEIGHT
+			) AS e
+			LEFT JOIN question AS f ON e.QUESTION_ID = f.id
+			LEFT JOIN topic g ON f.TOPIC_ID = g.id
+		WHERE
+			g.id = #{topicId}
+	</select>
+
+	<select id="selectTopicResultByUserId" resultMap="TopicVOMap">
+		SELECT
+			e.ID AS OPTION_ID,
+			e.`NAME` AS OPTION_NAME,
+			e.VOTE_COUNT,
+			f.ID AS QUESTION_ID,
+			f.`NAME` AS QUESTION_NAME,
+			g.id AS TOPIC_ID,
+			g.`name` AS TOPIC_NAME 
+		FROM
+			(
+			SELECT
+				d.ID,
+				d.QUESTION_ID,
+				d.`NAME`,
+			CASE
+					WHEN d.WEIGHT IS NULL THEN
+					0 ELSE SUM( d.WEIGHT ) 
+				END AS VOTE_COUNT 
+			FROM
+				(
+				SELECT
+					b.ID,
+					b.`NAME`,
+					b.QUESTION_ID,
+					c.WEIGHT 
+				FROM
+					( SELECT a.ID, a.`NAME`, a.QUESTION_ID FROM `option` AS a ) AS b
+					LEFT JOIN ( SELECT * FROM vote WHERE USER_ID = #{userId} ) AS c ON b.ID = c.OPTION_ID 
+				) AS d 
+			GROUP BY
+				d.ID,d.`NAME`,d.QUESTION_ID,d.WEIGHT
+			) AS e
+			LEFT JOIN question AS f ON e.QUESTION_ID = f.id
+			LEFT JOIN topic g ON f.TOPIC_ID = g.id
+		WHERE
+			g.id = #{topicId}
+	</select>
+
+	<select id="selectVoteByDate" resultMap="VoteVOMap">
+		SELECT
+			b.*,
+			c.`NAME` AS USER_NAME
+		FROM
+		(
+		SELECT
+			a.ID,
+			a.CREATE_DATE,
+			a.USER_ID
+		FROM
+			vote AS a
+		WHERE
+			1 = 1
+			<if test="startDate != null  ">
+				AND CREATE_DATE <![CDATA[ >= ]]>
+				#{startDate}
+			</if>
+			<if test="endDate != null ">
+				AND CREATE_DATE <![CDATA[ <= ]]>
+				#{endDate}
+			</if>
+			<if test="userId != null and userId != ''">
+				AND a.USER_ID = #{userId}
+			</if>
+				LIMIT #{page},
+				#{size}
+			) AS b
+			LEFT JOIN `user` AS c ON b.USER_ID = c.ID
+		ORDER BY
+			b.CREATE_DATE DESC
+	</select>
 </mapper>
