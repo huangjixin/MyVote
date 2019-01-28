@@ -78,7 +78,7 @@
 					LEFT JOIN vote AS c ON b.ID = c.OPTION_ID 
 				) AS d 
 			GROUP BY
-				d.ID,d.`NAME`,d.QUESTION_ID,d.WEIGHT
+				d.ID
 			) AS e
 			LEFT JOIN question AS f ON e.QUESTION_ID = f.id
 			LEFT JOIN topic g ON f.TOPIC_ID = g.id
@@ -117,7 +117,7 @@
 					LEFT JOIN ( SELECT * FROM vote WHERE USER_ID = #{userId} ) AS c ON b.ID = c.OPTION_ID 
 				) AS d 
 			GROUP BY
-				d.ID,d.`NAME`,d.QUESTION_ID,d.WEIGHT
+				d.ID
 			) AS e
 			LEFT JOIN question AS f ON e.QUESTION_ID = f.id
 			LEFT JOIN topic g ON f.TOPIC_ID = g.id
