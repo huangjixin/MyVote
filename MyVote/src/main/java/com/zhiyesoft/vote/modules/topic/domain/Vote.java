@@ -12,7 +12,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import lombok.Builder;
+import lombok.Data;
+
 @Table(name = "vote")
+@Data
+@Builder
 public class Vote implements Serializable {
     @Id
     @Column(name = "ID")

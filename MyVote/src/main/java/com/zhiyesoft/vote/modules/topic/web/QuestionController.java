@@ -21,6 +21,7 @@ import com.github.pagehelper.PageInfo;
 import com.zhiyesoft.vote.basic.core.vo.Response;
 import com.zhiyesoft.vote.modules.topic.domain.Question;
 import com.zhiyesoft.vote.modules.topic.domain.Topic;
+import com.zhiyesoft.vote.modules.topic.domain.Vote;
 import com.zhiyesoft.vote.modules.topic.service.IQuestionService;
 import com.zhiyesoft.vote.modules.topic.vo.QuestionVO;
 
@@ -51,6 +52,7 @@ public class QuestionController {
 		Response response = new Response();
 		int result = questionService.deleteByPrimaryKey(id);
 		response.setData(result);
+//		Vote vote = Vote.builder().;
 		return response;
 	}
 
