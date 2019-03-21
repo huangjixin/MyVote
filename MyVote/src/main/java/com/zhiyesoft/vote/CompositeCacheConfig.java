@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
 import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
@@ -25,6 +26,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 
 @Configuration
+@EnableCaching
 public class CompositeCacheConfig {
 
 	@Bean(name = "ehcacheCacheManager")
